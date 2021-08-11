@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "668255181934",
+    "project_id": "bloodpressbodytemperature",
+    "storage_bucket": "bloodpressbodytemperature.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668255181934:android:e84c8094169225e4025a7f",
+        "android_client_info": {
+          "package_name": "com.kamila.bloodpressurebodytemperaturecontrol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668255181934-1u87b03q8ta7396coqp5oomh60oidp34.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kamila.bloodpressurebodytemperaturecontrol",
+            "certificate_hash": "cad5e11d2c23bfa7826ec1a51023c42324cb466c"
+          }
+        },
+        {
+          "client_id": "668255181934-10al22ogqmc85fsple68keet0d7648oh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUQCyvmLq3-8rxLkdgmMqxWQj8xAJxLgc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668255181934-10al22ogqmc85fsple68keet0d7648oh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

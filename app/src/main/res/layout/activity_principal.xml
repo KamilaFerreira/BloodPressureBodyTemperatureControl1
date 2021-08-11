@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrincipalActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.BloodPressureBodyTemperatureControl.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.BloodPressureBodyTemperatureControl.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_principal" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="141dp"
+        android:layout_height="148dp"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="10dp"
+        app:menu_colorNormal="@color/blueBt"
+        app:menu_colorPressed="@color/teal_200"
+        fab:menu_icon="@drawable/ic_baseline_add_24">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_bloodPressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addBloodPressure"
+            app:fab_colorNormal="#5CBF94"
+            app:fab_label="Blood Pressure"
+            app:fab_size="mini"
+            app:srcCompat="@drawable/ic_baseline_add_24_white" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_BodyTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addBodyTemperature"
+            app:fab_colorNormal="#D57B99"
+            app:fab_label="Body Temperature"
+            app:fab_size="mini"
+            app:srcCompat="@drawable/ic_baseline_add_24_white" />
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
