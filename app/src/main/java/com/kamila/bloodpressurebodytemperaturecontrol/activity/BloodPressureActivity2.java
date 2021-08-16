@@ -26,11 +26,8 @@ public class BloodPressureActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blood_pressure2);
 
-
-        fieldBloodP = findViewById(R.id.editBodyT);
+        fieldBloodP = findViewById(R.id.editBloodP);
         fieldDate = findViewById(R.id.editDate);
-
-
 
         fieldDate.setText(DateCustom.currentDate());//this line of code will fill up the date field, with the current date
     }
@@ -43,6 +40,7 @@ public class BloodPressureActivity2 extends AppCompatActivity {
             numbers.setValue(Double.parseDouble(fieldBloodP.getText().toString()));
             numbers.setDate(date);
             numbers.save(date);
+            finish();
 
         }
     }
@@ -52,8 +50,8 @@ public class BloodPressureActivity2 extends AppCompatActivity {
 
         String textValue = fieldBloodP.getText().toString();
         String textDate = fieldDate.getText().toString();
-        if(textValue.isEmpty()){
-            if(textDate.isEmpty()){
+        if(!textValue.isEmpty()){
+            if(!textDate.isEmpty()){
                 return true;
 
             }else{
@@ -68,6 +66,5 @@ public class BloodPressureActivity2 extends AppCompatActivity {
             return false;
 
         }
-
     }
 }

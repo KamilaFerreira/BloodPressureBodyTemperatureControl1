@@ -15,15 +15,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BloodPressureBodyTemperatureControl">
-        <activity android:name=".activity.BloodPressureActivity2" android:theme="@style/bodyTemperatureTheme"></activity>
-        <activity android:name=".activity.BodyTemperatureActivity2" android:theme="@style/bloodPressureTheme" />
+        <activity
+            android:name=".activity.BloodPressureActivity2"
+            android:theme="@style/bodyTemperatureTheme" />
+        <activity
+            android:name=".activity.BodyTemperatureActivity2"
+            android:theme="@style/bloodPressureTheme" />
         <activity
             android:name=".PrincipalActivity"
             android:label="@string/title_activity_principal"
             android:theme="@style/Theme.BloodPressureBodyTemperatureControl.NoActionBar" />
         <activity android:name=".activity.RegisterActivity" />
         <activity android:name=".activity.LoginActivity" />
-
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

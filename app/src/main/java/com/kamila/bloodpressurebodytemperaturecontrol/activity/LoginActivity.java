@@ -38,9 +38,9 @@ public class LoginActivity extends AppCompatActivity {
 
         email = findViewById(R.id.editEmail);
         password = findViewById(R.id.editPassword);
-        buttonLogin = findViewById(R.id.buttonRegister);
+        buttonLogin = findViewById(R.id.buttonLogin);
 
-        buttonLogin.setOnClickListener(new View.OnClickListener() {
+        buttonLogin.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -53,6 +53,7 @@ public class LoginActivity extends AppCompatActivity {
                         user = new User();
                         user.setEmail(textEmail);
                         user.setPassword(textPassword);
+                        validateLogin();
                         //this piece of code will validate the existing user
 
                     }else{
@@ -69,7 +70,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        }
+    }
 
         //this method will validate the existing User
          public void validateLogin(){

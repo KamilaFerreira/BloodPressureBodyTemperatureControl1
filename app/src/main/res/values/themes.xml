@@ -28,12 +28,12 @@
     <style name="bodyTemperatureTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name ="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondary">@color/teal_200</item>
     </style>
 
     <style name="bloodPressureTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name ="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondary">@color/teal_200</item>
     </style>
 </resources>

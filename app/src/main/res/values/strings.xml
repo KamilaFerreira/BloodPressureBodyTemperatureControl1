@@ -13,4 +13,5 @@
     <string name="title_activity_main_screen">MainScreen</string>
     <string name="title_activity_principal">PrincipalActivity</string>
     <string name="title_activity_princiapl">PrinciaplActivity</string>
+    <string name="title_activity_blood_pressure">activity_blood_pressure</string>
 </resources>

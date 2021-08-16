@@ -7,6 +7,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -18,7 +19,10 @@ public class BodyTemperatureActivity2 extends AppCompatActivity {
 
     private TextInputEditText fieldDate;
     private EditText fieldBodyT;
+    private TextView textAverage;
     private Numbers numbers;
+    private double sum;
+    private double average1;
 
 
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -29,6 +33,7 @@ public class BodyTemperatureActivity2 extends AppCompatActivity {
 
         fieldBodyT = findViewById(R.id.editBodyT);
         fieldDate = findViewById(R.id.editDate);
+        textAverage = findViewById(R.id.textAverage);
 
         fieldDate.setText(DateCustom.currentDate());//this line of code will fill up the date field, with the current date
     }
@@ -42,6 +47,8 @@ public class BodyTemperatureActivity2 extends AppCompatActivity {
             numbers.setValue(Double.parseDouble(fieldBodyT.getText().toString()));
             numbers.setDate(date);
             numbers.save(date);
+
+            finish();
 
         }
     }
@@ -67,6 +74,16 @@ public class BodyTemperatureActivity2 extends AppCompatActivity {
             return false;
 
         }
+
+    }
+
+    public void average(){
+
+        for(double i = 0; i < numbers.getValue(); i++){
+            sum = sum + numbers.getValue();
+
+        }
+        average1 = sum/numbers.getValue();
 
     }
 

@@ -21,9 +21,9 @@ public class User {
     //this method will Save the User on Firebase
     public void save(){
        DatabaseReference firebase = ConfigFirebase.getFirebaseDataBase();
-       firebase.child("users")
-               .child(this.idUser)
-               .setValue(this);
+       firebase.child("users") //node one - Users
+               .child(this.idUser) // node two - Id of Users
+               .setValue(this); //the Method SetValue, salves the object User
     }
 
     public double getBodyTemperature() {

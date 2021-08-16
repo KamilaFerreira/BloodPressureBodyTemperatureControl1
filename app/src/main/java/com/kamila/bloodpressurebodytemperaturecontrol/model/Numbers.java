@@ -1,5 +1,7 @@
 package com.kamila.bloodpressurebodytemperaturecontrol.model;
 
+import android.widget.TextView;
+
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -15,11 +17,11 @@ public class Numbers {
     public Numbers() {
     }
 
-    //this merhod will save the input on the firebase
-    public void save(String date){
+    //this method will save the input on the firebase
+    public void save(String dateCurrent){
         FirebaseAuth authentication = ConfigFirebase.getFirebaseAuthentication();
         String idUser = Base64Custom.encodeBase64(authentication.getCurrentUser().getEmail());
-        String monthYear = DateCustom.monthYearDate(date);
+        String monthYear = DateCustom.monthYearDate(dateCurrent);
         DatabaseReference firebase = ConfigFirebase.getFirebaseDataBase();
         firebase.child("numbers")
                 .child(idUser)

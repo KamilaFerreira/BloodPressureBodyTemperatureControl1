@@ -34,6 +34,8 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+
         /*this piece of code finds the components on the Interface = FindViewById*/
         name = findViewById(R.id.editName);
         email = findViewById(R.id.editEmail);
